@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+header.App-header {
+  background-color: #25afaf;
+  padding: 20px;
+  color: rgb(3, 3, 3);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(229, 167, 112);
+  box-shadow: 0 2px 8px rgb(0, 0, 0);
+  border-radius: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  background-color: #20B2AA;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+.canvas {
+  border: 2px solid #080808;
+  margin-top: 40px;
+  border-radius: 8px;
+  width: 50%;
+  height: 200px;
+}
+
+.parrot-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  /* margin-top: 20px; */
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.parrot{
+  width: 100px;
+  height: 100px;
+  animation: fly 3s infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes fly {
+  0% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateX(20px);
   }
 }
+
+/* import React, { useState } from 'react';
+
+const PaintingApp = () => {
+  const [price, setPrice] = useState(100); // Initial base price
+  const [changeOrder, setChangeOrder] = useState(0); // Adjustments from change orders
+
+  // Function to handle the change order
+  const handleChangeOrder = (newChangeOrder) => {
+    setChangeOrder(newChangeOrder);
+    calculateNewPrice(newChangeOrder);
+  };
+
+  // Function to calculate the new price
+  const calculateNewPrice = (newChangeOrder) => {
+    const newPrice = 100 + newChangeOrder; // Base price + change order adjustments
+    setPrice(newPrice);
+  };
+
+  return (
+    <div>
+      <h1>Painting Service</h1>
+      <p>Base Price: $100</p>
+      <p>Adjustments: ${changeOrder}</p>
+      <p>Total Price: ${price}</p>
+      <button onClick={() => handleChangeOrder(50)}>Add Change Order (+$50)</button>
+    </div>
+  );
+};
+
+export default PaintingApp; */

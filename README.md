@@ -68,3 +68,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+App purpose is to ensure a seamless experience to where when dealing with a customer, I'll know everything that is to know about the customer and the task duty at hand. This app will enable to forsee any misshapps during painting project and ensuring we meet customer expectancy. 
