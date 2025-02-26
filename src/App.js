@@ -3,11 +3,7 @@ import './App.css';
 import React, {useState} from 'react';
 // import JpgImage from './assets/picassoPainting.jpg';
 
-// const policyMessage= ["firstName", "lastName", "address", "notes", "policies"]
-// const paintedHouses=[
-//   {id: 1, lat:35.2271, lng: -80.8431, address: "1234 Main St, Charlotte, NC", phoneNum: "704-555-5555", notes: "Painted the house with a blue color", policyMessage: "Painted the house with a blue color"},
-//   {id: 2, lat:35.2271, lng: -80.8431, address: "4493 Elmo Ave, Concord, NC", phoneNum: "704-555-5555", notes: "Painted the house with a blue color", policyMessage: "Painted the house with a blue color"},
-// ]
+
 let paintType = "Super Paint Flat Finish"; 
 let paintPolicy = "Scope of work: paint walls two quotes and baseboards on three rooms including masters, the right paint and amount of paint will be used to complete the job must be allocated prior to painting. Time frame: 2 days to complete the job. Payment: 30% upfront and remaining upon completion of the job. Warranty: 3 months warranty on the paint job. ";
 const paintedHouses=[
